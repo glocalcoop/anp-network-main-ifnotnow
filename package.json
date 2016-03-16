@@ -1,13 +1,13 @@
 {
-  "name": "anp-network-main-v2-child",
+  "name": "anp-network-main-ifnotnow",
   "version": "1.0.0",
   "author": "Pea Glocal <pea@glocal.coop>",
-  "homepage": "https://github.com/glocalcoop/anp-network-main-v2-child",
+  "homepage": "https://github.com/glocalcoop/anp-network-main-ifnotnow",
   "private": true,
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/glocalcoop/anp-network-main-v2-child.git"
+    "url": "https://github.com/glocalcoop/anp-network-main-ifnotnow.git"
   },
   "license": [
     {

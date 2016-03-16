@@ -1,4 +1,4 @@
-=== Activist Network Theme Child ===
+=== Activist Network If Not Now Theme ===
 
 Contributors: Pea, Glocal Coop
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
@@ -25,7 +25,7 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 
 = Does this theme support any plugins? =
 
-Activist Network Theme Child includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
+Activist Network If Not Now Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
 
