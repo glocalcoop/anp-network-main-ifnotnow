@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry-page' ); ?>>
 
 	<?php do_action ( 'anp_network_main_entry_header_before' );?>
 
@@ -16,7 +16,7 @@
 	$image_url = $image_data[0];
 	?>
 
-	<header class="entry-header" style="background-image:url(<?php echo ( !empty( $image_data ) ) ? $image_url : '' ; ?>)">
+	<header class="entry-header header-background" style="background-image:url(<?php echo ( !empty( $image_data ) ) ? $image_url : '' ; ?>)">
 
 		<?php do_action ( 'anp_network_main_entry_header_top' );?>
 

@@ -205,18 +205,14 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-.singular-page {
+.entry-header.header-background {
+    width: 100vw;
+    margin-left: -7.5%;
+    background-size: cover;
 
-    .entry-header {
-        width: 100vw;
-        margin-left: -7.5%;
-        background-size: cover;
-
-        .entry-title {
-            padding: 1.25em 1.75em;
-        }
+    h1.entry-title {
+        padding: 1.25em 1.75em;
     }
-
 }
 
 @media (min-width: $md-screen) {
@@ -297,16 +293,6 @@ body.buddypress #buddypress {
 
 .groups #buddypress #header-cover-image {
     background-color: rgba(255,255,255,.1);
-}
-
-
-.entry-content {
-    .panel-grid-cell {
-        .entry-meta {
-            @include screen-reader-text;
-        }
-    }
-
 }
 
 .post {

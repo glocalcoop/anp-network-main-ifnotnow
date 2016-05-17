@@ -219,11 +219,11 @@ input[type="submit"] {
   text-transform: uppercase;
   font-weight: bold; }
 
-.singular-page .entry-header {
+.entry-header.header-background {
   width: 100vw;
   margin-left: -7.5%;
   background-size: cover; }
-  .singular-page .entry-header .entry-title {
+  .entry-header.header-background h1.entry-title {
     padding: 1.25em 1.75em; }
 
 @media (min-width: 768px) {
@@ -278,15 +278,6 @@ body.buddypress #buddypress #invite-anyone-member-list li {
 
 .groups #buddypress #header-cover-image {
   background-color: rgba(255, 255, 255, 0.1); }
-
-.entry-content .panel-grid-cell .entry-meta {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute !important;
-  width: 1px;
-  /* many screen reader and browser combinations announce broken words as they would appear visually */
-  word-wrap: normal !important; }
 
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */

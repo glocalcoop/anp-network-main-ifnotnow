@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,10 +29,12 @@ Activist Network If Not Now Theme includes support for Jetpack's Infinite Scroll
 
 == Changelog ==
 
+= 1.0.3 May 17 2016 =
+* Added `header-background` class to `content-page.php` partial to more easily select.
+
 = 1.0.2 May 17 2016 =
 * Changed to fixed header for larger screen sizes
 * Changed accent color to #F79520
-
 
 = 1.0.1 May 16 2016 =
 * Modified content-page.php to display featured image as background image behind entry-header
