@@ -1,83 +1,177 @@
 /**
- * Color variables
+ * Uncomment and change as desired.
  */
-
-$color__primary: #509EA3;
-$color__secondary: #E53634;
-$color__tertiary: #1C2A42;
-$color__tertiary2: #AFBB87;
-$color__highlight: #EFE4A6;
-
-$color__primary-light: lighten($color__primary, 20%);
-$color__secondary-light: #EB6361;
-$color__tertiary-light: #293B5A;
-$color__hightlight-light: #EAE0CC;
 
 $color__black: #111;
 $color__white: #fff;
+$color__light-black: lighten($color__black, 15%);
+$color__base-grey: #7B8083;
 
-$color__light-black: lighten($color__black, 13.5%);
-$color__darkest-grey: $color__black;
-$color__dark-grey: lighten($color__black, 20%);
-$color__mid-grey: lighten($color__black, 33.5%);
-$color__light-grey: lighten($color__black, 46.7%);
-$color__lightest-grey: lighten($color__black, 93.5%);
 
-$white: $color__white;
-$black: $color__black;
-$color__default: $color__mid-grey;
+@function color($map: $colors__theme, $key: 'primary') {
+  @return map-get($map, $key);
+}
 
-$color__background-body: $color__white;
-$color__background-hr: $color__lightest-grey;
-$color__background-hr-alt: rgba($color__black,.2);
-$color__background-content: transparent;
+@function text-color( $bgcolor ) {
+  @if (lightness( $bgcolor ) > 40) {
+    @return $color__black;
+  }
+  @else {
+    @return $color__white;
+  } 
+}
+
+$colors__grey: (
+    'lightest-grey': mix(white, $color__base-grey, 90%),
+    'light-grey': mix(white, $color__base-grey, 60%),
+    'mid-light-grey': mix(white, $color__base-grey, 30%),
+    'mid-grey': $color__base-grey,
+    'mid-dark-grey': mix(black, $color__base-grey, 30%),
+    'dark-grey': mix(black, $color__base-grey, 60%),
+    'darkest-grey': mix(black, $color__base-grey, 90%),
+);
+
+$color__lightest-grey: color($colors__grey, 'lightest-grey');
+$color__light-grey: color($colors__grey, 'light-grey');
+$color__mid-light-grey: color($colors__grey, 'mid-light-grey');
+$color__mid-grey: color($colors__grey, 'mid-grey');
+$color__mid-dark-grey: color($colors__grey, 'mid-dark-grey');
+$color__dark-grey: color($colors__grey, 'dark-grey');
+$color__darkest-grey: color($colors__grey, 'darkest-grey');
+
+
+/**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+$colors__theme: (
+  'primary': #ffd014, 
+  'accent': #ffd014,
+  'secondary':  $color__dark-grey,
+  'foreground': $color__white,
+  'background': $color__black
+);
+
+$color__primary: color($colors__theme, 'primary');
+$color__secondary: color($colors__theme, 'secondary');
+$color__tertiary: color($colors__theme, 'accent');
+$color__accent: color($colors__theme, 'accent');
+$color__highlight: color($colors__theme, 'accent');
+$color__background: color($colors__theme, 'background');
+$color__foreground: color($colors__theme, 'foreground');
+
+$color__primary-tinted: mix(white, $color__primary, 10%);
+$color__primary-shaded: mix(black, $color__primary, 10%);
+$color__foreground-tinted: mix(white, $color__foreground, 10%);
+$color__foreground-shaded: mix(black, $color__foreground, 10%);
+$color__background-shaded: mix(black, color($colors__theme, 'background'), 5%);
+
+$colors__buttons: (
+    'success': #509ea3,
+    'info': $color__secondary,
+    'warning': #f39c12,
+    'danger': #eb6361,
+    'default': $color__mid-grey
+);
+
+$color__success: color($colors__buttons, 'success');
+$color__info: color($colors__buttons, 'info');
+$color__warning: color($colors__buttons, 'warning');
+$color__danger: color($colors__buttons, 'danger');
+$color__default: color($colors__buttons, 'default');
+
+$color__primary-light:  mix(white, $color__primary, 20%);
+$color__tertiary-light:  mix(white, $color__tertiary, 20%);
+$color__hightlight-light: mix(white, $color__highlight, 20%);
+
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+$colors__social: (
+    'facebook': #3B5998,
+    'twitter': #00aced,
+    'linkedin': #007bb6,
+    'google-plus': #dd4b39,
+    'youtube': #bb0000
+);
+
+$color__facebook: color($colors__social, 'facebook');
+$color__twitter: color($colors__social, 'twitter');
+$color__linkedin: color($colors__social, 'linkedin');
+$color__google-plus: color($colors__social, 'google-plus');
+$color__youtube: color($colors__social, 'youtube');
+
+
+$color__background-body: $color__background;
 $color__background-header: $color__primary;
-$color__background-panel: $color__lightest-grey;
+$color__background-content: transparent;
 $color__background-footer: $color__tertiary;
+$color__background-hr: $color__light-grey;
+$color__background-hr-alt: rgba($color__black,.3);
+$color__background-panel: $color__lightest-grey;
 $color__background-pre: $color__light-grey;
 $color__background-ins: $color__light-grey;
 $color__background-screen: $color__light-grey;
 
 $color__text-input: $color__light-black;
-$color__text-input-focus: $color__black;
+$color__text-input-focus: $color__foreground;
+$color__text-input-placeholder: $color__mid-grey;
 $color__text-screen: $color__primary;
-$color__text-header: rgba($color__white,.7);
+$color__text-header: $color__primary;
 
 $color__link: $color__primary;
-$color__link-visited: darken($color__link, 20%);
-$color__link-hover: darken($color__link, 20%);
-$color__text-main: $color__dark-grey;
-$color__text-light: $color__mid-grey;
-$color__text-inverted: $color__white;
-$color__text-headings: $color__dark-grey;
+$color__link-visited: $color__link;
+$color__link-hover: darken($color__link, 10%);
+$color__link-active: $color__link;
 
-$color__border-abbr: $color__light-black;
-$color__border-input: $color__mid-grey;
-$color__border-input-focus: $color__light-black;
-$color__border-frame: 5px solid $color__white;
+$color__text-main: $color__foreground;
+$color__text-meta: mix(white, $color__foreground, 30%);
+$color__text-light: $color__light-grey;
+$color__text-inverted: $color__white;
+
+$color__border-hr: $color__light-grey;
+$color__border-input: $color__border-hr;
+$color__border-input-focus: $color__secondary;
+$color__border-abbr: $color__border-hr;
+$color__border-frame: 5px solid $color__border-hr;
+$color__border-frame-inverted: 5px solid $color__white;
 
 $color__background-nav: $color__white;
-$color__background-nav-active: rgba($color__black,.2);
-$color__background-nav-hover: rgba($color__black,.2);
-$color__text-nav: $color__text-main;
-$color__text-nav-hover: $color__text-nav;
-$color__border-nav: rgba($color__black,.1);
+$color__background-nav-hover: $color__lightest-grey;
+$color__background-nav-active: $color__background-nav-hover;
+$color__text-nav: $color__foreground;
+$color__text-nav-active: $color__text-nav;
+$color__text-nav-hover: $color__text-nav-active;
+$color__border-nav: rgba($color__text-nav,.2);
 
-$color__background-nav-alt: $color__primary;
-$color__background-nav-active-alt: rgba($color__background-nav-alt,.5);
-$color__background-nav-hover-alt: $color__background-nav-active-alt;
-$color__text-nav-alt: $color__white;
+$color__background-nav-inverted: $color__foreground;
+$color__background-nav-hover-inverted: darken($color__background-nav-inverted, 20%);
+$color__background-nav-active-inverted: $color__background-nav-hover-inverted;
+$color__text-nav-inverted: $color__white;
+$color__text-nav-hover-inverted: $color__text-nav-inverted;
+$color__text-nav-active-inverted:$color__text-nav-hover-inverted;
+$color__border-nav-inverted: rgba($color__white,.1);
+
+$color__background-nav-alt: $color__light-grey;
+$color__background-nav-active-alt: $color__mid-grey;
+$color__background-nav-hover-alt: lighten($color__background-nav-active-alt, 10%);
+$color__text-nav-alt: $color__foreground;
 $color__text-nav-hover-alt: $color__white;
-$color__border-nav-alt: $color__background-nav-hover;
+$color__text-nav-active-alt: $color__text-nav-hover-alt;
+$color__border-nav-alt: rgba($color__black,.1);
 
 $color__background-widget: $color__primary;
+$color__border-widget: $color__background-hr-alt;
+$color__text-widget: text-color( $color__background-widget );
+$color__text-widget-header: rgba( $color__text-widget,.2 );
+
 $color__background-widget-alt: $color__lightest-grey;
-$color__border-widget: rgba($color__black,.5);
 $color__border-widget-alt: $color__background-hr-alt;
-$color__text-widget: $color__white;
-$color__text-widget-alt: $color__text-light;
-$color__text-widget-header: rgba($color__white,.5);
-$color__text-widget-alt-header: $color__primary;
+$color__text-widget-alt: text-color( $color__background-widget-alt );
+$color__text-widget-header-alt: $color__primary;
+
+$color__background-widget-plain: transparent;
+$color__border-widget-plain: transparent;
+$color__text-widget-plain: $color__mid-light-grey;
+$color__text-widget-header-plain: $color__primary;
 
 $color__background-button: $color__mid-grey;
 $color__background-button-hover: rgba($color__mid-grey, .2);
