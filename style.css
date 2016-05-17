@@ -103,12 +103,18 @@ h6 {
   text-transform: uppercase;
   font-family: "Norwester", "Lato", Helvetica, Arial, sans-serif !important; }
 
+#masthead .menu-toggle {
+  background-color: #ffd014; }
+
+#masthead .social-links a {
+  color: #ffd014;
+  border-color: #ffd014; }
+  #masthead .social-links a:before {
+    color: #ffd014; }
+
 #colophon .bottom-navigation,
 #colophon .copyright {
   background-color: #313334; }
-
-#masthead .menu-toggle {
-  background-color: #ffd014; }
 
 .home .entry.intro-content,
 #secondary .wrap {

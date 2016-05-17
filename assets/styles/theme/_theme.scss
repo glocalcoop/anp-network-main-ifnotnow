@@ -19,16 +19,27 @@ h6 {
     font-family: $font__heading !important;
 }
 
+#masthead {
+    .menu-toggle {
+        background-color: $color__primary;
+    }
+    .social-links a {
+        color: $color__primary;
+        border-color:  $color__primary;
+
+        &:before {
+            color: $color__primary;
+        }
+    }
+}
+
+
 #colophon {
     .bottom-navigation,
     .copyright {
         background-color: $color__secondary;
     }
 
-}
-
-#masthead .menu-toggle {
-    background-color: $color__primary;
 }
 
 .home .entry.intro-content,
