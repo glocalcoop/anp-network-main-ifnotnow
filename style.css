@@ -190,12 +190,11 @@ body.buddypress .postbox .inside {
 #buddypress #group-creation-previous {
   margin-left: 4%; }
 
-#invite-anyone-invite-list img.avatar {
-  width: 100px;
-  height: auto; }
-
 #invite-anyone-member-list {
-  background-color: transparent; }
+  background-color: #fff !important; }
+  #invite-anyone-member-list img.avatar {
+    width: 100px;
+    height: auto; }
 
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */

@@ -134,10 +134,6 @@ body.buddypress {
 }
 
 
-
-
-
-
 .groups #buddypress #header-cover-image {
     background-color: rgba(255,255,255,.1);
 }
@@ -146,14 +142,14 @@ body.buddypress {
     margin-left: 4%;
 }
 
-#invite-anyone-invite-list img.avatar {
-    width: 100px;
-    height: auto;
-}
 #invite-anyone-member-list {
-    background-color: transparent;
-}
+    background-color: $color__foreground !important;
 
+    img.avatar {
+        width: 100px;
+        height: auto;
+    }
+}
 
 .post {
     .meta {}
