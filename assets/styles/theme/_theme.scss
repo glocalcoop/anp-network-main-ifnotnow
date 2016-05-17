@@ -288,7 +288,10 @@ body.buddypress #buddypress {
     }
 
     #invite-anyone-member-list {
-        color: $color_background;
+        li {
+           color: $color_background; 
+        }
+        
     }
 
 }
