@@ -112,6 +112,12 @@ h6 {
   #masthead .social-links a:before {
     color: #ffd014; }
 
+#masthead .site-branding .custom-logo-link .custom-logo,
+#masthead .site-branding .site-logo-link .site-logo {
+  width: 100%;
+  max-width: 350px;
+  height: auto; }
+
 #colophon .bottom-navigation,
 #colophon .copyright {
   background-color: #313334; }

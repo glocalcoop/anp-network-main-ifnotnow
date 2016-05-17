@@ -31,6 +31,12 @@ h6 {
             color: $color__primary;
         }
     }
+    .site-branding .custom-logo-link .custom-logo,
+    .site-branding .site-logo-link .site-logo {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
 }
 
 
