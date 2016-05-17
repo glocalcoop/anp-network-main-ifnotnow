@@ -2,6 +2,131 @@
  THEME - Default
 ******************************************************************/
 
+@include include-font($font-family: 'Norwester', $file-name: 'norwester', $weight: normal, $style: normal);
+
+body {
+    background-color: $color__background;
+    color: $color__foreground;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: $font__heading !important;
+}
+
+#colophon {
+    .bottom-navigation,
+    .copyright {
+        background-color: $color__secondary;
+    }
+
+}
+
+#masthead .menu-toggle {
+    background-color: $color__primary;
+}
+
+.home .entry.intro-content,
+#secondary .wrap {
+    border-top: none;
+    border-bottom: 1px solid $color__darkest-grey;
+}
+
+.home-page .sow-headline {
+    text-shadow: 1px 1px 1px $color__background;
+}
+
+.home-page .so-widget-sow-headline h1 {
+    color: $color__foreground !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.home-page .ow-button-base,
+input[type="submit"] {
+    background-color: $color__primary;
+    color: $color__foreground;
+    text-transform: uppercase;
+}
+
+.singular-page {
+
+    .entry-header {
+        width: 100vw;
+        margin-left: -7.5%;
+        background-size: cover;
+
+        .entry-title {
+            padding: 1.25em 1.75em;
+        }
+    }
+
+}
+
+body.siteorigin-panels {
+    // h1.entry-title {
+    //     @extend %visuallyhidden;
+    // }
+    // h1.image-header {
+    //     padding-left: 1.75em;
+    // }
+}
+
+.widget_siteorigin-panels-postloop {
+    // .entry-header {
+    //     .entry-meta {
+    //         @extend %visuallyhidden;
+    //     }
+    // }
+}
+
+@media (min-width: $md-screen) {
+    body.singular-page {
+        #secondary {
+            margin-top: 225px;
+        }
+    }
+}
+
+body.buddypress .site-main .item-list-tabs ul li {
+    background-color: $color__mid-light-grey;
+}
+
+#buddypress .item-list-tabs ul li a,
+#buddypress .item-list-tabs ul li span {
+    color: $color__background;
+}
+
+body.buddypress .site-main .item-list-tabs ul li.selected,
+body.buddypress .site-main .item-list-tabs ul li.current {
+    background-color: $color__primary;
+    color: $color__foreground;
+}
+
+body.buddypress .site-main table tr td.label,
+body.buddypress .site-main table > tbody > tr,
+body.buddypress .site-main table > tbody > tr:nth-of-type(2n+1),
+#invite-anyone-member-list {
+    background-color: transparent;
+}
+
+.groups #buddypress #header-cover-image {
+    background-color: rgba(255,255,255,.1);
+}
+
+#buddypress #group-creation-previous {
+    margin-left: 4%;
+}
+
+#invite-anyone-invite-list img.avatar {
+    width: 100px;
+    height: auto;
+}
 
 .post {
     .meta {}
