@@ -94,6 +94,10 @@ body {
   background-color: #111;
   color: #fff; }
 
+p,
+li {
+  color: #fff; }
+
 h1,
 h2,
 h3,
@@ -152,12 +156,18 @@ input[type="submit"] {
   body.singular-page #secondary {
     margin-top: 225px; } }
 
-body.buddypress .site-main .item-list-tabs ul li {
-  background-color: #a3a6a8; }
-
 #buddypress .item-list-tabs ul li a,
 #buddypress .item-list-tabs ul li span {
   color: #111; }
+
+body.buddypress form {
+  color: #111; }
+  body.buddypress form p,
+  body.buddypress form li {
+    color: #111; }
+
+body.buddypress .site-main .item-list-tabs ul li {
+  background-color: #a3a6a8; }
 
 body.buddypress .site-main .item-list-tabs ul li.selected,
 body.buddypress .site-main .item-list-tabs ul li.current {
@@ -166,9 +176,13 @@ body.buddypress .site-main .item-list-tabs ul li.current {
 
 body.buddypress .site-main table tr td.label,
 body.buddypress .site-main table > tbody > tr,
-body.buddypress .site-main table > tbody > tr:nth-of-type(2n+1),
-#invite-anyone-member-list {
+body.buddypress .site-main table > tbody > tr:nth-of-type(2n+1) {
   background-color: transparent; }
+
+body.buddypress .postbox .inside {
+  background-color: transparent;
+  font-size: 16px;
+  font-size: 1rem; }
 
 .groups #buddypress #header-cover-image {
   background-color: rgba(255, 255, 255, 0.1); }
@@ -179,6 +193,9 @@ body.buddypress .site-main table > tbody > tr:nth-of-type(2n+1),
 #invite-anyone-invite-list img.avatar {
   width: 100px;
   height: auto; }
+
+#invite-anyone-member-list {
+  background-color: transparent; }
 
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */

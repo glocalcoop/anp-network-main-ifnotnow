@@ -9,6 +9,11 @@ body {
     color: $color__foreground;
 }
 
+p,
+li {
+     color: $color__foreground;
+}
+
 h1,
 h2,
 h3,
@@ -85,23 +90,6 @@ input[type="submit"] {
 
 }
 
-body.siteorigin-panels {
-    // h1.entry-title {
-    //     @extend %visuallyhidden;
-    // }
-    // h1.image-header {
-    //     padding-left: 1.75em;
-    // }
-}
-
-.widget_siteorigin-panels-postloop {
-    // .entry-header {
-    //     .entry-meta {
-    //         @extend %visuallyhidden;
-    //     }
-    // }
-}
-
 @media (min-width: $md-screen) {
     body.singular-page {
         #secondary {
@@ -110,27 +98,45 @@ body.siteorigin-panels {
     }
 }
 
-body.buddypress .site-main .item-list-tabs ul li {
-    background-color: $color__mid-light-grey;
-}
-
 #buddypress .item-list-tabs ul li a,
 #buddypress .item-list-tabs ul li span {
     color: $color__background;
 }
 
-body.buddypress .site-main .item-list-tabs ul li.selected,
-body.buddypress .site-main .item-list-tabs ul li.current {
-    background-color: $color__primary;
-    color: $color__foreground;
+body.buddypress {
+
+    form {
+        color: $color__background;
+        p,
+        li {
+            color: $color__background;
+        }
+    }
+
+    .site-main .item-list-tabs ul li {
+        background-color: $color__mid-light-grey;
+    }
+    .site-main .item-list-tabs ul li.selected,
+    .site-main .item-list-tabs ul li.current {
+        background-color: $color__primary;
+        color: $color__foreground;
+    }
+    .site-main table tr td.label,
+    .site-main table > tbody > tr,
+    .site-main table > tbody > tr:nth-of-type(2n+1) {
+        background-color: transparent;
+    }
+
+    .postbox .inside {
+        background-color: transparent;
+        @include font-size($h6);
+    }
 }
 
-body.buddypress .site-main table tr td.label,
-body.buddypress .site-main table > tbody > tr,
-body.buddypress .site-main table > tbody > tr:nth-of-type(2n+1),
-#invite-anyone-member-list {
-    background-color: transparent;
-}
+
+
+
+
 
 .groups #buddypress #header-cover-image {
     background-color: rgba(255,255,255,.1);
@@ -144,6 +150,10 @@ body.buddypress .site-main table > tbody > tr:nth-of-type(2n+1),
     width: 100px;
     height: auto;
 }
+#invite-anyone-member-list {
+    background-color: transparent;
+}
+
 
 .post {
     .meta {}
