@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,11 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network If Not Now Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 1.0.2 May 17 2016 =
+* Changed to fixed header for larger screen sizes
+* Changed accent color to #F79520
+
 
 = 1.0.1 May 16 2016 =
 * Modified content-page.php to display featured image as background image behind entry-header

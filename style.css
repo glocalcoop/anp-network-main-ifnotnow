@@ -4,7 +4,7 @@ Theme https://github.com/glocalcoop/anp-network-main-ifnotnow
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: Child theme starter for ANP main network site
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main-ifnotnow
@@ -56,11 +56,11 @@ Tags:
 # Widgets
 --------------------------------------------------------------*/
 a {
-  color: #ffd014; }
+  color: #F79520; }
   a:hover, a:focus {
-    color: #e0b300; }
+    color: #dc7b08; }
   a:visited {
-    color: #ffd014; }
+    color: #F79520; }
 
 /*--------------------------------------------------------------
 # Structure
@@ -108,19 +108,92 @@ h6 {
   font-family: "Norwester", "Lato", Helvetica, Arial, sans-serif !important; }
 
 #masthead .menu-toggle {
-  background-color: #ffd014; }
+  background-color: #F79520; }
 
-#masthead .social-links a {
-  color: #ffd014;
-  border-color: #ffd014; }
-  #masthead .social-links a:before {
-    color: #ffd014; }
+#masthead .header-menu a {
+  color: #fff; }
+
+#masthead .header-menu li:hover a,
+#masthead .header-menu li:focus a {
+  background-color: transparent; }
+
+#masthead .header-menu li a:hover,
+#masthead .header-menu li a:focus {
+  color: #F79520; }
 
 #masthead .site-branding .custom-logo-link .custom-logo,
+#masthead .site-branding .custom-logo-link .site-logo,
+#masthead .site-branding .site-logo-link .custom-logo,
 #masthead .site-branding .site-logo-link .site-logo {
-  width: 100%;
-  max-width: 350px;
+  width: 200px;
+  max-width: 100%;
   height: auto; }
+
+#masthead .social-links a {
+  color: #F79520;
+  border-color: #F79520; }
+  #masthead .social-links a:before {
+    color: #F79520; }
+
+@media screen and (min-width: 768px) {
+  #masthead {
+    position: fixed;
+    top: 0;
+    height: 150px;
+    background-color: #111;
+    z-index: 100;
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); }
+    #masthead .site-branding-container {
+      display: block; }
+    #masthead .site-branding {
+      height: 100px; }
+      #masthead .site-branding .custom-logo-link,
+      #masthead .site-branding .site-logo-link {
+        height: 100px;
+        width: 50%;
+        display: inherit;
+        margin: 0 auto; }
+        #masthead .site-branding .custom-logo-link .custom-logo,
+        #masthead .site-branding .custom-logo-link .site-logo,
+        #masthead .site-branding .site-logo-link .custom-logo,
+        #masthead .site-branding .site-logo-link .site-logo {
+          max-height: 65%;
+          width: auto;
+          display: block;
+          margin: 0 auto; }
+      #masthead .site-branding .site-description {
+        display: none; }
+    #masthead .social-links {
+      position: absolute;
+      top: 0;
+      right: 5%; }
+    #masthead .site-navigation {
+      height: 100px; }
+    #masthead .main-navigation-container {
+      text-align: center; }
+      #masthead .main-navigation-container .header-menu {
+        width: 100%; }
+        #masthead .main-navigation-container .header-menu > li {
+          display: inline-block;
+          float: none;
+          vertical-align: top;
+          margin-right: 1px; }
+          #masthead .main-navigation-container .header-menu > li:hover a,
+          #masthead .main-navigation-container .header-menu > li:focus a {
+            background-color: #313334; }
+          #masthead .main-navigation-container .header-menu > li ul {
+            text-align: left;
+            background-color: #111; }
+            #masthead .main-navigation-container .header-menu > li ul li:hover a,
+            #masthead .main-navigation-container .header-menu > li ul li:focus a {
+              color: #F79520; }
+  .admin-bar #masthead,
+  .admin-bar #masthead .social-links {
+    top: 21px; }
+  #content {
+    margin-top: 150px; } }
 
 #colophon .bottom-navigation,
 #colophon .copyright {
@@ -139,11 +212,12 @@ h6 {
   text-transform: uppercase;
   font-weight: 700; }
 
-.home-page .ow-button-base,
+.ow-button-base a,
 input[type="submit"] {
-  background-color: #ffd014;
+  background-color: #F79520;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .singular-page .entry-header {
   width: 100vw;
@@ -156,45 +230,51 @@ input[type="submit"] {
   body.singular-page #secondary {
     margin-top: 225px; } }
 
-#buddypress .item-list-tabs ul li a,
-#buddypress .item-list-tabs ul li span {
-  color: #111; }
+body.buddypress #buddypress #item-header-content {
+  color: #fff; }
+  body.buddypress #buddypress #item-header-content p {
+    color: #fff; }
 
-body.buddypress form {
-  color: #111; }
-  body.buddypress form p,
-  body.buddypress form li {
-    color: #111; }
-
-body.buddypress .site-main .item-list-tabs ul li {
-  background-color: #a3a6a8; }
-
-body.buddypress .site-main .item-list-tabs ul li.selected,
-body.buddypress .site-main .item-list-tabs ul li.current {
-  background-color: #ffd014;
+body.buddypress #buddypress #item-actions .group-members {
   color: #fff; }
 
-body.buddypress .site-main table tr td.label,
-body.buddypress .site-main table > tbody > tr,
-body.buddypress .site-main table > tbody > tr:nth-of-type(2n+1) {
-  background-color: transparent; }
+body.buddypress #buddypress .fc-left,
+body.buddypress #buddypress #bpeo-ical-download {
+  color: #fff; }
 
-body.buddypress .postbox .inside {
-  background-color: transparent;
-  font-size: 16px;
-  font-size: 1rem; }
+body.buddypress #buddypress #item-body p {
+  color: #fff; }
+
+body.buddypress #buddypress #item-body form p {
+  color: #111; }
+
+body.buddypress #buddypress #item-body form #message.default {
+  border-color: #7B8083; }
+  body.buddypress #buddypress #item-body form #message.default p {
+    color: #7B8083; }
+
+body.buddypress #buddypress #item-body form #message.info {
+  border-color: #313334; }
+  body.buddypress #buddypress #item-body form #message.info p {
+    color: #313334; }
+
+body.buddypress #buddypress #item-body form #message.success {
+  border-color: #509ea3; }
+  body.buddypress #buddypress #item-body form #message.success p {
+    color: #509ea3; }
+
+body.buddypress #buddypress #item-body form #message.warning {
+  border-color: #f39c12; }
+  body.buddypress #buddypress #item-body form #message.warning p {
+    color: #f39c12; }
+
+body.buddypress #buddypress #item-body form #message.danger {
+  border-color: #eb6361; }
+  body.buddypress #buddypress #item-body form #message.danger p {
+    color: #eb6361; }
 
 .groups #buddypress #header-cover-image {
   background-color: rgba(255, 255, 255, 0.1); }
-
-#buddypress #group-creation-previous {
-  margin-left: 4%; }
-
-#invite-anyone-member-list {
-  background-color: #fff !important; }
-  #invite-anyone-member-list img.avatar {
-    width: 100px;
-    height: auto; }
 
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */

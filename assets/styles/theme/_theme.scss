@@ -28,6 +28,38 @@ h6 {
     .menu-toggle {
         background-color: $color__primary;
     }
+
+    .header-menu {
+        a {
+           color: $color__foreground; 
+        }
+        li {
+            &:hover a,
+            &:focus a {
+                background-color: transparent;
+            }
+
+            a:hover,
+            a:focus {
+                color: $color__accent;
+            }
+        }
+     }
+
+     .site-branding {
+        .custom-logo-link,
+        .site-logo-link {
+            .custom-logo,
+            .site-logo {
+                width: 200px;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+     }
+
+    .site-navigation {}
+
     .social-links a {
         color: $color__primary;
         border-color:  $color__primary;
@@ -36,14 +68,109 @@ h6 {
             color: $color__primary;
         }
     }
-    .site-branding .custom-logo-link .custom-logo,
-    .site-branding .site-logo-link .site-logo {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-    }
+
 }
 
+@include breakpoint(md) {
+
+    #masthead {
+        position: fixed;
+        top: 0;
+        height: 150px;
+        background-color: $color__background;
+        z-index: 100;
+
+        -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+
+        .site-branding-container {
+            display: block;
+        }
+
+        .site-branding {
+            height: 100px;
+
+            .custom-logo-link,
+            .site-logo-link {
+                height: 100px;
+                width: 50%;
+                display: inherit;
+                margin: 0 auto;
+
+                .custom-logo,
+                .site-logo {
+                    max-height: 65%;
+                    width: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .site-description {
+                display: none;
+            }
+
+        }
+
+        .social-links {
+            position: absolute;
+            top: 0;
+            right: 5%;
+        }
+
+        .site-navigation {
+            height: 100px;
+        }
+
+        .main-navigation-container {
+            text-align: center;
+
+            .header-menu {
+
+                width: 100%;
+
+                &> li {
+                    display: inline-block;
+                    float: none;
+                    vertical-align: top;
+                    margin-right: 1px;
+
+                    &:hover a,
+                    &:focus a {
+                        background-color: $color__secondary;
+                    }
+
+
+                    ul {
+                        text-align: left;
+                        background-color: $color__background;
+
+                        li:hover a,
+                        li:focus a {
+                            color: $color__accent;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .admin-bar  {
+        #masthead,
+        #masthead .social-links {
+          top: 21px;  
+        }
+        
+    }
+
+    #content {
+        margin-top: 150px;
+    }
+
+}
 
 #colophon {
     .bottom-navigation,
@@ -59,21 +186,23 @@ h6 {
     border-bottom: 1px solid $color__darkest-grey;
 }
 
-.home-page .sow-headline {
-    text-shadow: 1px 1px 1px $color__background;
+.home-page {
+    .sow-headline {
+        text-shadow: 1px 1px 1px $color__background;
+    }
+    .so-widget-sow-headline h1 {
+        color: $color__foreground !important;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
 }
 
-.home-page .so-widget-sow-headline h1 {
-    color: $color__foreground !important;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.home-page .ow-button-base,
+.ow-button-base a,
 input[type="submit"] {
     background-color: $color__primary;
     color: $color__foreground;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .singular-page {
@@ -98,58 +227,72 @@ input[type="submit"] {
     }
 }
 
-#buddypress .item-list-tabs ul li a,
-#buddypress .item-list-tabs ul li span {
-    color: $color__background;
-}
-
-body.buddypress {
-
-    form {
-        color: $color__background;
-        p,
-        li {
-            color: $color__background;
+body.buddypress #buddypress {
+    #item-header-content {
+        color: $color__foreground;
+        p {
+            color: $color__foreground;
+        }
+    }
+    #item-actions {
+        .group-members {
+            color: $color__foreground;
         }
     }
 
-    .site-main .item-list-tabs ul li {
-        background-color: $color__mid-light-grey;
-    }
-    .site-main .item-list-tabs ul li.selected,
-    .site-main .item-list-tabs ul li.current {
-        background-color: $color__primary;
+    .fc-left,
+    #bpeo-ical-download {
         color: $color__foreground;
     }
-    .site-main table tr td.label,
-    .site-main table > tbody > tr,
-    .site-main table > tbody > tr:nth-of-type(2n+1) {
-        background-color: transparent;
+
+    #item-body p {
+        color: $color__foreground;
     }
 
-    .postbox .inside {
-        background-color: transparent;
-        @include font-size($h6);
+    #item-body form p {
+        color: $color__background;
     }
+
+    #item-body form #message {
+
+        &.default {
+            border-color: $color__default;
+            p {
+               color: $color__default; 
+            }
+        }
+        &.info {
+            border-color: $color__info;
+            p {
+                color: $color__info;
+            }
+        }
+        &.success {
+            border-color: $color__success;
+            p {
+                color: $color__success;
+            }
+        }
+        &.warning {
+            border-color: $color__warning;
+            p { 
+                color: $color__warning;
+            }
+        }
+        &.danger {
+            border-color: $color__danger;
+            p {
+                color: $color__danger;
+            }
+        }
+    }
+
 }
-
 
 .groups #buddypress #header-cover-image {
     background-color: rgba(255,255,255,.1);
 }
 
-#buddypress #group-creation-previous {
-    margin-left: 4%;
-}
-
-#invite-anyone-member-list {
-    background-color: $color__foreground !important;
-
-    img.avatar {
-        width: 100px;
-        height: auto;
-    }
-}
 
 .post {
     .meta {}
