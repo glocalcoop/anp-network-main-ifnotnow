@@ -1,11 +1,11 @@
-=== Activist Network If Not Now Theme ===
+=== If Not Now Theme ===
 
 Contributors: Pea, Glocal Coop
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,11 @@ Activist Network If Not Now Theme includes support for Jetpack's Infinite Scroll
 
 == Changelog ==
 
+= 1.0.1 May 16 2016 =
+* Modified content-page.php to display featured image as background image behind entry-header
+* Updated styling to properly display full-widget page header image
+* Updated colors to match styling
+* Added Norwester font
 
 == Credits ==
 

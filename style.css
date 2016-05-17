@@ -1,10 +1,10 @@
 /*
-Theme Name: Activist Network If Not Now Theme
+Theme Name: If Not Now Theme
 Theme https://github.com/glocalcoop/anp-network-main-ifnotnow
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: Child theme starter for ANP main network site
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main-ifnotnow
@@ -16,8 +16,13 @@ Tags:
 # Utilities
 --------------------------------------------------------------*/
 /**
- * Color variables
+ * Uncomment and change as desired.
  */
+/**
+ * Can be replaced with another color palette
+ * See: theme directory for sample palettes
+ */
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
 /**
  * Elements
  */
@@ -51,11 +56,11 @@ Tags:
 # Widgets
 --------------------------------------------------------------*/
 a {
-  color: #509EA3; }
+  color: #ffd014; }
   a:hover, a:focus {
-    color: #2e5c5f; }
+    color: #e0b300; }
   a:visited {
-    color: #2e5c5f; }
+    color: #ffd014; }
 
 /*--------------------------------------------------------------
 # Structure
@@ -78,6 +83,91 @@ a {
 /******************************************************************
  THEME - Default
 ******************************************************************/
+@font-face {
+  font-family: "Norwester";
+  font-weight: normal;
+  font-style: normal;
+  src: url("dist/fonts/norwester.eot");
+  src: url("dist/fonts/norwester.eot?#iefix") format("embedded-opentype"), url("dist/fonts/norwester.woff") format("woff"), url("dist/fonts/norwester.ttf") format("truetype"), url("dist/fonts/norwester.svg#norwester") format("svg"); }
+
+body {
+  background-color: #111;
+  color: #fff; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: "Norwester", "Lato", Helvetica, Arial, sans-serif !important; }
+
+#colophon .bottom-navigation,
+#colophon .copyright {
+  background-color: #313334; }
+
+#masthead .menu-toggle {
+  background-color: #ffd014; }
+
+.home .entry.intro-content,
+#secondary .wrap {
+  border-top: none;
+  border-bottom: 1px solid #0c0d0d; }
+
+.home-page .sow-headline {
+  text-shadow: 1px 1px 1px #111; }
+
+.home-page .so-widget-sow-headline h1 {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.home-page .ow-button-base,
+input[type="submit"] {
+  background-color: #ffd014;
+  color: #fff;
+  text-transform: uppercase; }
+
+.singular-page .entry-header {
+  width: 100vw;
+  margin-left: -7.5%;
+  background-size: cover; }
+  .singular-page .entry-header .entry-title {
+    padding: 1.25em 1.75em; }
+
+@media (min-width: 768px) {
+  body.singular-page #secondary {
+    margin-top: 225px; } }
+
+body.buddypress .site-main .item-list-tabs ul li {
+  background-color: #a3a6a8; }
+
+#buddypress .item-list-tabs ul li a,
+#buddypress .item-list-tabs ul li span {
+  color: #111; }
+
+body.buddypress .site-main .item-list-tabs ul li.selected,
+body.buddypress .site-main .item-list-tabs ul li.current {
+  background-color: #ffd014;
+  color: #fff; }
+
+body.buddypress .site-main table tr td.label,
+body.buddypress .site-main table > tbody > tr,
+body.buddypress .site-main table > tbody > tr:nth-of-type(2n+1),
+#invite-anyone-member-list {
+  background-color: transparent; }
+
+.groups #buddypress #header-cover-image {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+#buddypress #group-creation-previous {
+  margin-left: 4%; }
+
+#invite-anyone-invite-list img.avatar {
+  width: 100px;
+  height: auto; }
+
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */
 /* blog template page */
