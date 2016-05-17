@@ -300,6 +300,15 @@ body.buddypress #buddypress {
 }
 
 
+.entry-content {
+    .panel-grid-cell {
+        .entry-meta {
+            @include screen-reader-text;
+        }
+    }
+
+}
+
 .post {
     .meta {}
 }
