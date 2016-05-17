@@ -91,7 +91,7 @@ a {
   src: url("dist/fonts/norwester.eot?#iefix") format("embedded-opentype"), url("dist/fonts/norwester.woff") format("woff"), url("dist/fonts/norwester.ttf") format("truetype"), url("dist/fonts/norwester.svg#norwester") format("svg"); }
 
 body {
-  background-color: #111;
+  background-color: #282828;
   color: #fff; }
 
 p,
@@ -140,7 +140,7 @@ h6 {
     position: fixed;
     top: 0;
     height: 150px;
-    background-color: #111;
+    background-color: #282828;
     z-index: 100;
     -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
@@ -185,7 +185,7 @@ h6 {
             background-color: #313334; }
           #masthead .main-navigation-container .header-menu > li ul {
             text-align: left;
-            background-color: #111; }
+            background-color: #282828; }
             #masthead .main-navigation-container .header-menu > li ul li:hover a,
             #masthead .main-navigation-container .header-menu > li ul li:focus a {
               color: #F79520; }
@@ -205,7 +205,7 @@ h6 {
   border-bottom: 1px solid #0c0d0d; }
 
 .home-page .sow-headline {
-  text-shadow: 1px 1px 1px #111; }
+  text-shadow: 1px 1px 1px #282828; }
 
 .home-page .so-widget-sow-headline h1 {
   color: #fff !important;
@@ -246,7 +246,7 @@ body.buddypress #buddypress #item-body p {
   color: #fff; }
 
 body.buddypress #buddypress #item-body form p {
-  color: #111; }
+  color: #282828; }
 
 body.buddypress #buddypress #item-body form #message.default {
   border-color: #7B8083; }
@@ -272,6 +272,9 @@ body.buddypress #buddypress #item-body form #message.danger {
   border-color: #eb6361; }
   body.buddypress #buddypress #item-body form #message.danger p {
     color: #eb6361; }
+
+body.buddypress #buddypress #invite-anyone-member-list li {
+  color: #282828; }
 
 .groups #buddypress #header-cover-image {
   background-color: rgba(255, 255, 255, 0.1); }
