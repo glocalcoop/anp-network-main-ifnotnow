@@ -9,11 +9,6 @@ body {
     color: $color__foreground;
 }
 
-p,
-li {
-     color: $color__foreground;
-}
-
 h1,
 h2,
 h3,
@@ -236,105 +231,18 @@ input[type="submit"] {
             margin-top: 225px;
         }
     }
-}
-
-/**
- * BuddyPress
- */
-body.buddypress #buddypress {
-    #item-header-content {
-        color: $color__foreground;
-        p {
-            color: $color__foreground;
-        }
-    }
-    #item-actions {
-        .group-members {
-            color: $color__foreground;
-        }
-    }
-
-    .fc-left,
-    #bpeo-ical-download {
-        color: $color__foreground;
-    }
-
-    #item-body p {
-        color: $color__foreground;
-    }
-
-    #item-body form p {
-        color: $color__background;
-    }
-
-    #item-body form #message {
-
-        &.default {
-            border-color: $color__default;
-            p {
-               color: $color__default; 
-            }
-        }
-        &.info {
-            border-color: $color__info;
-            p {
-                color: $color__info;
-            }
-        }
-        &.success {
-            border-color: $color__success;
-            p {
-                color: $color__success;
-            }
-        }
-        &.warning {
-            border-color: $color__warning;
-            p { 
-                color: $color__warning;
-            }
-        }
-        &.danger {
-            border-color: $color__danger;
-            p {
-                color: $color__danger;
-            }
-        }
-    }
-
-    #invite-anyone-member-list {
-        li {
-           color: $color__background; 
+    body.buddypress,
+    body.bbpress,
+    body.bp-docs {
+        #secondary {
+            margin-top: 0;
         }
     }
 
 }
 
-.groups #buddypress #header-cover-image {
-    background-color: $color__accent;
-}
-
-/**
- * Multi-site Directory
- */
-.network_directory,
-.archive-network_directory {
-    .entry,
-    .entry:first-child {
-        border-color: rgba($color__white,.2);
-        background-color: rgba($color__white,.1);
-    }
-    .entries-list {
-        margin-top: .5em;
-    }
-}
-
-@include breakpoint(md) {
-    .network_directory,
-    .archive-network_directory {
-        .entry-footer {
-            margin-left: 85px;
-        }
-    }
+.item-meta {
+    color: $color__foreground;
 }
 
 .post {

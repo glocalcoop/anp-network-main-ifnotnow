@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,8 +29,12 @@ Activist Network If Not Now Theme includes support for Jetpack's Infinite Scroll
 
 == Changelog ==
 
+= 1.0.5 May 24 2016 =
+* Issue #1408 - Updated BuddyPress styling where theme colors caused illegibility.
+
 = 1.0.4 May 17 2016 =
 * Updated styling for network directory listing.
+* Added custom screenshot
 
 = 1.0.3 May 17 2016 =
 * Added `header-background` class to `content-page.php` partial to more easily select.

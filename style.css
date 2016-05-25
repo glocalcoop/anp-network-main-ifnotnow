@@ -4,7 +4,7 @@ Theme https://github.com/glocalcoop/anp-network-main-ifnotnow
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: Child theme starter for ANP main network site
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main-ifnotnow
@@ -77,6 +77,52 @@ a {
 /**
  * Plugins
  */
+/**
+ * Multisite Directory
+ * @link https://wordpress.org/plugins/multisite-directory/
+ *
+ */
+.network-directory-sites > li {
+  font-family: "Norwester", "Lato", Helvetica, Arial, sans-serif;
+  color: #fff; }
+
+/**
+ * BuddyPress
+ * @link https://buddypress.org
+ *
+ */
+body.buddypress #primary li {
+  color: #282828; }
+
+body.buddypress .bpeo-ical-link .icon:before {
+  color: #fff; }
+
+@media screen and (min-width: 768px) {
+  body.buddypress #item-header {
+    padding-bottom: .5em; }
+  body.buddypress #item-body h2,
+  body.buddypress #item-body h3 {
+    margin-left: 15px; }
+  body.buddypress #item-body h3.hndle {
+    margin-left: 0; }
+  body.buddypress .entry-title {
+    margin-left: 15px; }
+  body.buddypress #item-header-content {
+    margin-left: 15px; } }
+
+/**
+ * BP Docs
+ * @link https://github.com/boonebgorges/buddypress-docs
+ *
+ */
+.bp-docs .folder-action-links,
+.bp-docs .doctable {
+  padding-right: .25em;
+  padding-left: .25em; }
+
+.bp-docs .no-docs {
+  margin: .25em; }
+
 /*--------------------------------------------------------------
 # Theme
 --------------------------------------------------------------*/
@@ -92,10 +138,6 @@ a {
 
 body {
   background-color: #282828;
-  color: #fff; }
-
-p,
-li {
   color: #fff; }
 
 h1,
@@ -243,78 +285,14 @@ input[type="submit"] {
 
 @media (min-width: 768px) {
   body.singular-page #secondary {
-    margin-top: 225px; } }
+    margin-top: 225px; }
+  body.buddypress #secondary,
+  body.bbpress #secondary,
+  body.bp-docs #secondary {
+    margin-top: 0; } }
 
-/**
- * BuddyPress
- */
-body.buddypress #buddypress #item-header-content {
+.item-meta {
   color: #fff; }
-  body.buddypress #buddypress #item-header-content p {
-    color: #fff; }
-
-body.buddypress #buddypress #item-actions .group-members {
-  color: #fff; }
-
-body.buddypress #buddypress .fc-left,
-body.buddypress #buddypress #bpeo-ical-download {
-  color: #fff; }
-
-body.buddypress #buddypress #item-body p {
-  color: #fff; }
-
-body.buddypress #buddypress #item-body form p {
-  color: #282828; }
-
-body.buddypress #buddypress #item-body form #message.default {
-  border-color: #7B8083; }
-  body.buddypress #buddypress #item-body form #message.default p {
-    color: #7B8083; }
-
-body.buddypress #buddypress #item-body form #message.info {
-  border-color: #313334; }
-  body.buddypress #buddypress #item-body form #message.info p {
-    color: #313334; }
-
-body.buddypress #buddypress #item-body form #message.success {
-  border-color: #509ea3; }
-  body.buddypress #buddypress #item-body form #message.success p {
-    color: #509ea3; }
-
-body.buddypress #buddypress #item-body form #message.warning {
-  border-color: #f39c12; }
-  body.buddypress #buddypress #item-body form #message.warning p {
-    color: #f39c12; }
-
-body.buddypress #buddypress #item-body form #message.danger {
-  border-color: #eb6361; }
-  body.buddypress #buddypress #item-body form #message.danger p {
-    color: #eb6361; }
-
-body.buddypress #buddypress #invite-anyone-member-list li {
-  color: #282828; }
-
-.groups #buddypress #header-cover-image {
-  background-color: #F79520; }
-
-/**
- * Multi-site Directory
- */
-.network_directory .entry,
-.network_directory .entry:first-child,
-.archive-network_directory .entry,
-.archive-network_directory .entry:first-child {
-  border-color: rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.1); }
-
-.network_directory .entries-list,
-.archive-network_directory .entries-list {
-  margin-top: .5em; }
-
-@media screen and (min-width: 768px) {
-  .network_directory .entry-footer,
-  .archive-network_directory .entry-footer {
-    margin-left: 85px; } }
 
 /* for sites that are read right to left (i.e. hebrew) */
 /* home page */
