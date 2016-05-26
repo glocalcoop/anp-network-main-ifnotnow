@@ -19,6 +19,10 @@ h6 {
     font-family: $font__heading !important;
 }
 
+#secondary li {
+    color: $color__foreground;
+}
+
 /**
  * Site Header
  */

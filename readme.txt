@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ A theme for the main site of an ANP network, based on _s with Hybrid Core and Bo
 Activist Network If Not Now Theme includes support for Jetpack's Infinite Scroll and Site Logos, as well as other features.
 
 == Changelog ==
+
+= 1.0.6 May 26 2016 =
+* 
 
 = 1.0.5 May 24 2016 =
 * Issue #1408 - Updated BuddyPress styling where theme colors caused illegibility.

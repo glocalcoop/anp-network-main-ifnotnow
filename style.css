@@ -4,7 +4,7 @@ Theme https://github.com/glocalcoop/anp-network-main-ifnotnow
 Author: Pea, Glocal
 Author URI: http://glocal.coop
 Description: Child theme starter for ANP main network site
-Version: 1.0.5
+Version: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: anp-network-main-ifnotnow
@@ -91,37 +91,12 @@ a {
  * @link https://buddypress.org
  *
  */
-body.buddypress #primary li {
-  color: #282828; }
-
-body.buddypress .bpeo-ical-link .icon:before {
-  color: #fff; }
-
-@media screen and (min-width: 768px) {
-  body.buddypress #item-header {
-    padding-bottom: .5em; }
-  body.buddypress #item-body h2,
-  body.buddypress #item-body h3 {
-    margin-left: 15px; }
-  body.buddypress #item-body h3.hndle {
-    margin-left: 0; }
-  body.buddypress .entry-title {
-    margin-left: 15px; }
-  body.buddypress #item-header-content {
-    margin-left: 15px; } }
-
-/**
- * BP Docs
- * @link https://github.com/boonebgorges/buddypress-docs
- *
- */
-.bp-docs .folder-action-links,
-.bp-docs .doctable {
-  padding-right: .25em;
-  padding-left: .25em; }
-
-.bp-docs .no-docs {
-  margin: .25em; }
+#buddypress {
+  padding: 0 .25em .5em .25em; }
+  #buddypress #cover-image-container,
+  #buddypress #item-nav {
+    margin-right: -.25em;
+    margin-left: -.25em; }
 
 /*--------------------------------------------------------------
 # Theme
@@ -148,6 +123,9 @@ h5,
 h6 {
   text-transform: uppercase;
   font-family: "Norwester", "Lato", Helvetica, Arial, sans-serif !important; }
+
+#secondary li {
+  color: #fff; }
 
 /**
  * Site Header
