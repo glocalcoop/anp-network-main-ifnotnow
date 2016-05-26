@@ -30,10 +30,13 @@ Activist Network If Not Now Theme includes support for Jetpack's Infinite Scroll
 == Changelog ==
 
 = 1.0.6 May 26 2016 =
-* 
+* Removed child theme style enqueue from `/inc/setup.php` which was causing duplicate calls
+* Removed most BuddyPress styling since it's now handled in parent theme
+
 
 = 1.0.5 May 24 2016 =
 * Issue #1408 - Updated BuddyPress styling where theme colors caused illegibility.
+* Removed unused most BuddyPress styles because it's now handled in the parent
 
 = 1.0.4 May 17 2016 =
 * Updated styling for network directory listing.
