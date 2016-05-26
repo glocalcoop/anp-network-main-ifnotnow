@@ -19,65 +19,15 @@
  * @link https://buddypress.org
  *
  */
-body.buddypress {
+#buddypress {
+    padding: 0 .25em .5em .25em;
 
-    #primary {
-        li {
-            color: $color__background;
-        }    
-    }
-
-
-    .entry-title {}
-    #item-header-content {}
-
-    .bpeo-ical-link {
-        .icon:before {
-           color: $color__foreground; 
-        }
+    #cover-image-container,
+    #item-nav {
+        margin-right: -.25em;
+        margin-left: -.25em;
     }
 }
 
-@include breakpoint(md) {
-    body.buddypress {
-
-        #item-header {
-            padding-bottom: .5em;
-        }
-        #item-body {
-            h2,
-            h3 {
-                margin-left: 15px;
-            }
-            h3.hndle {
-                margin-left: 0;
-            }
-        }
-        .entry-title {
-            margin-left: 15px;
-        }
-        #item-header-content {
-            margin-left: 15px;
-        }
-    }
-}
-
-/**
- * BP Docs
- * @link https://github.com/boonebgorges/buddypress-docs
- *
- */
- .bp-docs {
-    
-    .folder-action-links,
-    .doctable {
-        padding-right: .25em;
-        padding-left: .25em;
-    }
-
-    .no-docs {
-        margin: .25em;
-    }
- }
 
 
